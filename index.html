@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <title>Carousal Project</title>
-    </body>
     <head>
-        <h1 id="carousal">Carousal Project</h1>
+        <title>Carousal Project</title>
+        <link href="styles/style.css" rel="stylesheet">
     </head>
+    <body>
+        <div class="carousal">
+            <div class="carousal-item carousal-item-visible">
+                <img src="images/1.jpg" alt="">
+            </div>
+            <div class="carousal-item">
+                <img src="images/2.jpg" alt="">
+            </div>
+            <div class="carousal-item">
+                <img src="images/3.jpg" alt="">
+            </div>
+            <div class="carousal-actions">
+                <button id="carousal-button-prev" aria-label="Previous slide"><</button>
+                <button id="carousal-button-next" aria-label="Next slide">></button>
+            </div>
+        </div>
+    </body>
+    
 </html>
