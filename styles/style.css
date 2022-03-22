@@ -9,12 +9,14 @@
   height: auto;
 }
 
-.carousal .carousal-item {
+.carousal .carousal-item,
+.carousel .carousel-item-hidden {
   display: none;
 }
 
 .carousal .carousal-item-visible {
   display: block;
+  animation: fadeVisibility 0.5s;
 }
 
 .carousal .carousal-actions {
@@ -43,4 +45,13 @@
 
 .carousal .carousal-actions button#carousal-button-next {
   margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
